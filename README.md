@@ -1,3 +1,3 @@
-# AD_Laboratorio01
-Ejercicios de laboratorio01 Antonio Martinez segura
+# AD_tema1
+ejercicios tema 1 antonio martinez segura
 
