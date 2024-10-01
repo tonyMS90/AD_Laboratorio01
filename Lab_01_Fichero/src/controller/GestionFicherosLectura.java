@@ -7,7 +7,7 @@ public class GestionFicherosLectura {
     //ACTIVIDAD PROPUESTA
 
         /*Parte 1: Listar el nombre de todos los ficheros ubicados en un directorio
-        (en clase hemos puesto como ejemplo un directorio creado en el paquete resources)
+        (en clase hemos puesto como ejemplo un directorio creado en el paquete resources)ademas nombro cada subdirectorio
          */
     //src/resources/directorio
     public void lecturaDirectorios(String path) {

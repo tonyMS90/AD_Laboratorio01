@@ -1,6 +1,7 @@
 import controller.GestionFicherosEscritura;
 import controller.GestionFicherosLectura;
 import controller.GestorFicherosConjuntos;
+import controller.PruebaFicheros;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.io.File;
@@ -19,7 +20,10 @@ public class Entrada {
         //GestionFicherosEscritura gestionFicherosEscritura = new GestionFicherosEscritura();
         //gestionFicherosEscritura.escribirFichero("src/resources/ficheros/escritura.txt");
         //GestorFicherosConjuntos gestorFicherosConjuntos = new GestorFicherosConjuntos();
-        GestorFicherosConjuntos gestorFicherosConjuntos = new GestorFicherosConjuntos();
+
+
+
+        /*GestorFicherosConjuntos gestorFicherosConjuntos = new GestorFicherosConjuntos();
         Scanner scanner = new Scanner(System.in);
         int opcion = 0;
         do {
@@ -35,7 +39,7 @@ public class Entrada {
                     gestorFicherosConjuntos.descifrarMensajeCodigo("src/resources/ficheros/cifradoCodigo.txt");
                     break;
             }
-        } while (opcion!=0);
+        } while (opcion!=0);*/
         //gestorFicherosConjuntos.lecturaEscritura("src/resources/ficheros/cifrado.txt");
 
 
