@@ -57,7 +57,7 @@ public class GestorFicherosConjuntos {
                 char letra = mensaje.charAt(i);
                 //fileWriter.write(letra+"\n");
                 int codigo = (int)letra;
-                // System.out.println("codigo = " + codigo);
+                System.out.println("codigo = " + codigo); //aqui pedimos que nos saque el codigo de la letra que pongamos en ASCII
                 //fileWriter.write("123");
                 char codigoLetra = (char)(codigo*fase);
                 //fileWriter.write(String.valueOf(codigo*fase)+"\n");
@@ -79,11 +79,11 @@ public class GestorFicherosConjuntos {
         int fase = scanner.nextInt();
 
         File file = new File(path);
-        BufferedReader br = null;
+        BufferedReader br = null; //trabajamos con bufferedReader por que con filereader nos quedamos cortos, ya que queremos que nos lea el numero entero, no de uno en uno
 
         try {
 
-            br = new BufferedReader(new FileReader(file));
+            br = new BufferedReader(new FileReader(file));//metemos el Filereader dentro del bufferedReader para leer el archivo siempre
             String lectura = null;
             while ((lectura= br.readLine())!=null){
                 // lectura
@@ -120,9 +120,11 @@ public class GestorFicherosConjuntos {
                 lecturaConjunta.append(lectura);
             }
             System.out.println(lecturaConjunta);
-            for (int i = 0; i <lecturaConjunta.length(); i++) {
-                int codigo = (int)lecturaConjunta.charAt(i)/fase;
-                System.out.print((char) codigo);
+
+            //Para descifrar un codigo de caracteres raros..
+            for (int i = 0; i <lecturaConjunta.length(); i++) { //vete sacando cada caracter
+                int codigo = (int)lecturaConjunta.charAt(i)/fase;//lo pasas a numero y lo divides entre la fase
+                System.out.print((char) codigo);//me lo devuelves en letra
             }
             System.out.println();
 

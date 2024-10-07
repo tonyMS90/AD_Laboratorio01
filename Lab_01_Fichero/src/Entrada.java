@@ -20,10 +20,11 @@ public class Entrada {
         //GestionFicherosEscritura gestionFicherosEscritura = new GestionFicherosEscritura();
         //gestionFicherosEscritura.escribirFichero("src/resources/ficheros/escritura.txt");
         //GestorFicherosConjuntos gestorFicherosConjuntos = new GestorFicherosConjuntos();
+        //gestorFicherosConjuntos.descifrarMensaje("src/resources/ficheros/cifradoCodigo.txt");
 
 
 
-        /*GestorFicherosConjuntos gestorFicherosConjuntos = new GestorFicherosConjuntos();
+        GestorFicherosConjuntos gestorFicherosConjuntos = new GestorFicherosConjuntos();
         Scanner scanner = new Scanner(System.in);
         int opcion = 0;
         do {
@@ -39,8 +40,7 @@ public class Entrada {
                     gestorFicherosConjuntos.descifrarMensajeCodigo("src/resources/ficheros/cifradoCodigo.txt");
                     break;
             }
-        } while (opcion!=0);*/
-        //gestorFicherosConjuntos.lecturaEscritura("src/resources/ficheros/cifrado.txt");
+        } while (opcion!=0);
 
 
 
